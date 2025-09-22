@@ -1,11 +1,13 @@
 import "./App.css";
-import Layout from "./Layout";
+import { RouterProvider } from "react-router-dom";
+import { AuthProvider } from "./contexts";
+import { router } from "./router";
 
 function App() {
 	return (
-		<Layout>
-			<h1>Hello World</h1>
-		</Layout>
+		<AuthProvider>
+			<RouterProvider router={router} />
+		</AuthProvider>
 	);
 }
 

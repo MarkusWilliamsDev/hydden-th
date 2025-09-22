@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Sidebar() {
 	return (
 		<aside className="w-64 min-h-screen bg-base-200 hidden lg:block">
@@ -5,28 +7,28 @@ export default function Sidebar() {
 				<h2 className="text-xl font-bold mb-6">Menu</h2>
 				<ul className="menu">
 					<li>
-						<a
-							href="/dashboard"
+						<Link
+							to="/dashboard"
 							className="flex items-center gap-3 p-3 rounded-lg hover:bg-base-300"
 						>
 							Dashboard
-						</a>
+						</Link>
 					</li>
 					<li>
-						<a
-							href="/profile"
+						<Link
+							to="/profile"
 							className="flex items-center gap-3 p-3 rounded-lg hover:bg-base-300"
 						>
 							Profile
-						</a>
+						</Link>
 					</li>
 					<li>
-						<a
-							href="/settings"
+						<Link
+							to="/settings"
 							className="flex items-center gap-3 p-3 rounded-lg hover:bg-base-300"
 						>
 							Settings
-						</a>
+						</Link>
 					</li>
 				</ul>
 			</div>
